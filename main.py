@@ -2,7 +2,7 @@ from draft_content import read_draft_content_src
 from simple_srt import tracks_to_srt_string
 
 if __name__ == '__main__':
-    print(r'''剪映的草稿文件位于 C:\Users\bjalp\AppData\Local\JianyingPro\User Data\Projects 。''')
+    print(r'''剪映的草稿文件一般位于 C:\Users\您的用户名\AppData\Local\JianyingPro\User Data\Projects 。''')
 
     draft_content_directory = input("请输入 draft_content.json 的地址>>")
     if not draft_content_directory:
