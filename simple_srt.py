@@ -13,7 +13,7 @@ def tracks_to_srt_list(tracks):
     for i, t in enumerate(tracks):
         tracks_in_string.append(
             '\n'.join([str(i),
-                       us_to_string(t['start']) + ' ---> ' +
+                       us_to_string(t['start']) + ' --> ' +
                        us_to_string(t['end']),
                        t['content']])
         )
