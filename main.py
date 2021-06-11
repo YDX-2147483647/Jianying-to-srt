@@ -6,7 +6,7 @@ if __name__ == '__main__':
 
     draft_content_directory = input("请输入 draft_content.json 的地址>>")
     if not draft_content_directory:
-        draft_content_directory = r'C:\Users\bjalp\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft\85E36163-D02E-4ed0-8253-CFC4F9E4D720\draft_content.json'
+        draft_content_directory = r'C:\Users\您的用户名\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft\85E36163-D02E-4ed0-8253-CFC4F9E4D720\draft_content.json'
 
     tracks = read_draft_content_src(draft_content_directory)
 
