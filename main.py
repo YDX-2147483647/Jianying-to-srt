@@ -1,13 +1,13 @@
-import os
-import glob
+from os import getenv
 from os.path import join, getctime
+import glob
 
 from draft_content import read_draft_content_src
 from simple_srt import tracks_to_srt_string
 from draft_meta_info import get_draft_name_from_content_path
 
 if __name__ == '__main__':
-    drafts_parent = join(os.getenv("LOCALAPPDATA"), './JianyingPro/User Data/Projects/com.lveditor.draft/')
+    drafts_parent = join(getenv("LOCALAPPDATA"), './JianyingPro/User Data/Projects/com.lveditor.draft/')
     drafts_contents = glob.glob(drafts_parent + './*/draft_content.json')
     latest_draft_content = max(drafts_contents, key=getctime)
     print('最新创建的剪映草稿文件如下。')
