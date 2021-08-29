@@ -24,8 +24,10 @@ def draft_content_to_tracks(draft_content):
 
     return tracks
 
+
 def get_material_name(draft_content):
     return draft_content['materials']['videos'][0]['material_name']
+
 
 def read_draft_content_src(directory):
     with open(directory, 'r', encoding='utf-8') as f:
