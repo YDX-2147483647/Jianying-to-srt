@@ -4,6 +4,7 @@ from os.path import join, getctime
 
 from draft_content import read_draft_content_src
 from simple_srt import tracks_to_srt_string
+from draft_meta_info import get_draft_name_from_content_path
 
 if __name__ == '__main__':
     drafts_parent = join(os.getenv("LOCALAPPDATA"), './JianyingPro/User Data/Projects/com.lveditor.draft/')
@@ -16,9 +17,10 @@ if __name__ == '__main__':
     if not draft_content:
         draft_content = latest_draft_content
 
-    tracks, name = read_draft_content_src(draft_content)
+    tracks, _ = read_draft_content_src(draft_content)
+    name = get_draft_name_from_content_path(draft_content)
 
-    subtitle_filename = './' + os.path.splitext(name)[0] + '.srt'
+    subtitle_filename = f'./{name}.srt'
     with open(subtitle_filename, 'w', encoding='utf-8') as f:
         f.write(tracks_to_srt_string(tracks))
 
