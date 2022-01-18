@@ -1,5 +1,7 @@
 # 转换剪映字幕
 
+[![GitHub stars](https://img.shields.io/github/stars/YDX-2147483647/Jianying-to-srt)](https://github.com/YDX-2147483647/Jianying-to-srt/stargazers)
+
 > 2021年4月30日。
 
 [剪映](https://lv.ulikecam.com/)是一款剪辑软件，据说它的（中文）字幕识别效果特别好，然而无法导出导出字幕文件。还好其轨道是用 JSON 存储的，可由此制作 *.srt 字幕文件。
