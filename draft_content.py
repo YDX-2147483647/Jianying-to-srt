@@ -26,12 +26,14 @@ def draft_content_to_tracks(draft_content: json) -> list:
 
 
 def get_material_name(draft_content: json) -> str:
+    """获取视频轨第一个视频的名字
+    注意，若无视频，会炸。
+    """
     return draft_content['materials']['videos'][0]['material_name']
 
 
-def read_draft_content_src(directory: str) -> (list, str):
+def read_draft_content_src(directory: str) -> list:
     with open(directory, 'r', encoding='utf-8') as f:
         draft_content = json.loads(f.read())
     tracks = draft_content_to_tracks(draft_content)
-    name = get_material_name(draft_content)
-    return tracks, name
+    return tracks

@@ -17,7 +17,7 @@ if __name__ == '__main__':
     if not draft_content:
         draft_content = latest_draft_content
 
-    tracks, _ = read_draft_content_src(draft_content)
+    tracks = read_draft_content_src(draft_content)
     name = get_draft_name_from_content_path(draft_content)
 
     subtitle_filename = f'./{name}.srt'
