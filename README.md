@@ -2,7 +2,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/YDX-2147483647/Jianying-to-srt)](https://github.com/YDX-2147483647/Jianying-to-srt/stargazers)
 
-> **Warning** 最迟到 v3.9.0，剪映已支持导出字幕。此项目已过时，将于近期归档。祝好！
+> **Warning** 最迟到 v3.9.0，剪映已支持导出字幕。此项目已过时，故归档。祝好！
 
 [剪映](https://www.capcut.cn/)是一款剪辑软件，据说它的（中文）字幕识别效果特别好，然而无法导出导出字幕文件。还好其轨道是用 JSON 存储的，可由此制作 *.srt 字幕文件。
 
